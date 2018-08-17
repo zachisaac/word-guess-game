@@ -61,7 +61,7 @@ let loss = 0;
 function setAnswer() {
     //Sets random answer
     answer = wordArray[Math.floor(Math.random() * wordArray.length)]; {
-        console.log(answer)
+    
     };
     setAnswer();
 

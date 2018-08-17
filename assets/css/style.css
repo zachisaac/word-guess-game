@@ -1,0 +1,11 @@
+/*Hangman Game CSS*/
+body {
+    background: url("../images/lamboav.jpg");
+    width: 100%;
+}
+
+.row {
+    text-align: center;
+    font-family: 'Playfair Display SC', serif;
+    color: aliceblue;
+}
