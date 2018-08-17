@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Word Guess Game</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!--This is where I build out how I want the game structured-->
+    <!--Title Section-->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div>
+                    <h1>Guess The Car Manufacturer</h1>
+                    <br>
+                    <h3>Number of guesses = Number of _'s</h3>
+                    <br>
+                    <h3>Press any key to get Start</h3>
+                    <br>
+                    <h3>GOOD LUCK!!!</h3>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!--"_ _ _ _ _ _"-->
+        <div class="row">
+            <div class="col-12">
+                <div id="myAnswer" >
+                    <h2>_ _ _ _ _</h2>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!--Wins-->
+        <div class="row">
+            <div class="col-12">
+                <div>
+                    <h2>Wins: 0</h2>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!--Loses-->
+        <div class="row">
+            <div class="col-12">
+                <div>
+                    <h2>Loses: 0</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>
