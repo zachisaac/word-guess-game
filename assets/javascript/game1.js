@@ -46,7 +46,7 @@ var letterCountElement = document.getElementById('letterCount');
 var lettersGuessedElement = document.getElementById('lettersGuessed');
 //Initialize game 
 function initializeGame() {
-    answer = word[Math.floor(Math.random() * array.length)];
+    answer = array[Math.floor(Math.random() * array.length)];
     allowedGuesses = 10;
     wrongGuesses = [];
     correctGuesses = [];

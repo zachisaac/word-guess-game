@@ -40,13 +40,10 @@ const wordArray = [
 ];
 
 // Whatever random car is being guessed
-let answer = setAnswer();
+let answer;
 
 // Correctly guessed letters
 let correctGuesses = [];
-
-// Incorrect guesses
-let incorrectGuesses = [];
 
 // Remaining guesses
 let remainingGuesses = 10;
@@ -61,23 +58,10 @@ let loss = 0;
 function setAnswer() {
     //Sets random answer
     answer = wordArray[Math.floor(Math.random() * wordArray.length)]; {
-    
+
     };
     setAnswer();
 
-    /**
-     * Checks if a guessed letter is valid and then sets 
-     * it to the correctGuesses array in the right location.
-     */
-    function guessLetter() {
-        // Get a keyboard input from player
-        // Check to see if letter exists in "let answer"
-        // Check to see if a letter exists multiple times within the answer
-        // If the letter exists within the answer, put letter in correctGuesses
-        // Put letter in correct spot
-        // If guess in incorrect, subtract 1 life and keep track of wrong guesses
-
-    }
 
     // Subtracts 1 life
     function subtractLife() {
@@ -130,4 +114,24 @@ function setAnswer() {
     }
 
     startGame()
+
+
+
 };
+/**
+    * Checks if a guessed letter is valid and then sets 
+    * it to the correctGuesses array in the right location.
+    */
+
+document.onkeyup = function (event) {
+    var guess = String.fromCharCode(event.which).toLowerCase();
+    correctGuesses.push(guess);
+    document.getElementById('word').innerHTML = correctGuesses;
+    console.log(guess);
+}
+    // Get a keyboard input from player
+    // Check to see if letter exists in "let answer"
+    // Check to see if a letter exists multiple times within the answer
+    // If the letter exists within the answer, put letter in correctGuesses
+    // Put letter in correct spot
+    // If guess in incorrect, subtract 1 life and keep track of wrong guesses
